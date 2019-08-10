@@ -1,0 +1,14 @@
+# 这里更改使用的配置文件 application.properties 变为 application.yml
+server:
+  port: 8001
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false # ①
+    fetchRegistry: false    # ② registerWithEureka & fetchRegistry 设置为 false 表示自己是一个 Eureka 的 server 服务注册中心
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+# Eureka 启动之后的入口 http://localhost:8001/
+
