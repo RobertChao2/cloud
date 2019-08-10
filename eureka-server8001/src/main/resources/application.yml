@@ -3,12 +3,18 @@ server:
   port: 8001
 
 eureka:
+  server:
+    eviction-interval-timer-in-ms: 1000 # 续期时间，即扫描失效服务的间隔时间（缺省为60*1000ms）
+    enable-self-preservation: false  # 关闭自我保护模式（默认为打开）
   instance:
-    hostname: localhost
+    hostname: localhost # 主机名称
   client:
-    registerWithEureka: false # ①
-    fetchRegistry: false    # ② registerWithEureka & fetchRegistry 设置为 false 表示自己是一个 Eureka 的 server 服务注册中心
-    serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+    registerWithEureka: false # ① 是否向服务注册中心注册自己
+    fetchRegistry: false    # ② 是否检索服务registerWithEureka & fetchRegistry 设置为 false 表示自己是一个 Eureka 的 server 服务注册中心
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/  # 服务注册中心的配置内容，指定服务注册中心的位置
 # Eureka 启动之后的入口 http://localhost:8001/
 
+spring:
+  application:
+    name: eureka-server
