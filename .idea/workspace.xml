@@ -2,44 +2,63 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0fe5c918-52b6-4e00-8294-2c7a8616afb2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client8002/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client8002/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client8002/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client8002/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client8002/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client8002/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client8002/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client8002/src/main/java/cn/chao/eurekaclient/EurekaClient8002Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client8002/src/main/java/cn/chao/eurekaclient/test/ProducerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client8002/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client8002/src/test/java/cn/chao/eurekaclient/EurekaClient8002ApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-consumer8003/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-consumer8003/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-consumer8003/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-consumer8003/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-consumer8003/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-consumer8003/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-consumer8003/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-consumer8003/src/main/java/cn/chao/eurekaconsumer/EurekaConsumer8003Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-consumer8003/src/main/java/cn/chao/eurekaconsumer/consumertest/ConsumerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-consumer8003/src/main/java/cn/chao/eurekaconsumer/consumertest/RestTemplateConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-consumer8003/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-consumer8003/src/test/java/cn/chao/eurekaconsumer/EurekaConsumer8003ApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client8002/src/main/java/cn/chao/eurekaclient/feign/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-client8002/src/main/java/cn/chao/eurekaclient/feign/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-client8006/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-client8006/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-client8006/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-client8006/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-client8006/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-client8006/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-client8006/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-client8006/src/main/java/cn/chao/feignclient/FeignClient8006Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-client8006/src/main/java/cn/chao/feignclient/feign/ConsumerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-client8006/src/main/java/cn/chao/feignclient/feign/FeignFallBack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-client8006/src/main/java/cn/chao/feignclient/feign/FeignService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-client8006/src/main/java/cn/chao/feignclient/feign/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-client8006/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feign-client8006/src/test/java/cn/chao/feignclient/FeignClient8006ApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hystrixclient8005/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hystrixclient8005/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hystrixclient8005/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hystrixclient8005/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hystrixclient8005/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hystrixclient8005/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hystrixclient8005/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hystrixclient8005/src/main/java/cn/chao/hystrixclient/Hystrixclient8005Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hystrixclient8005/src/main/java/cn/chao/hystrixclient/hystrix/testHystrixController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hystrixclient8005/src/main/java/cn/chao/hystrixclient/ribbon/RibbonConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hystrixclient8005/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hystrixclient8005/src/test/java/cn/chao/hystrixclient/Hystrixclient8005ApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ribbon-client8004/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ribbon-client8004/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ribbon-client8004/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ribbon-client8004/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ribbon-client8004/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ribbon-client8004/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ribbon-client8004/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ribbon-client8004/src/main/java/cn/chao/ribbonclient/RibbonClient8004Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ribbon-client8004/src/main/java/cn/chao/ribbonclient/ribbon/RibbonConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ribbon-client8004/src/main/java/cn/chao/ribbonclient/ribbon/RibbonController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ribbon-client8004/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ribbon-client8004/src/test/java/cn/chao/ribbonclient/RibbonClient8004ApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server8001/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server8001/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server8001/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server8001/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client8002/src/main/java/cn/chao/eurekaclient/test/ProducerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client8002/src/main/java/cn/chao/eurekaclient/test/ProducerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client8002/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-client8002/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/eureka-server8001/target/" />
     <ignored path="$PROJECT_DIR$/eureka-client8002/target/" />
     <ignored path="$PROJECT_DIR$/eureka-consumer8003/target/" />
+    <ignored path="$PROJECT_DIR$/ribbon-client8004/target/" />
+    <ignored path="$PROJECT_DIR$/hystrixclient8005/target/" />
+    <ignored path="$PROJECT_DIR$/feign-client8006/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,17 +70,63 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eureka-client8002/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="51" selection-start-line="3" selection-start-column="51" selection-end-line="3" selection-end-column="51" />
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="76">
+                <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+                <folding>
+                  <element signature="e#388#417#0" />
+                  <element signature="e#589#611#0" />
+                  <element signature="e#3659#3788#0" />
+                  <element signature="e#3902#3930#0" />
+                  <element signature="e#5269#5471#0" />
+                  <element signature="e#6033#6260#0" />
+                  <element signature="e#6085#6527#0" />
+                  <element signature="e#6741#7159#0" />
+                  <element signature="e#7213#7595#0" />
+                  <element signature="e#7617#7742#0" />
+                </folding>
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eureka-client8002/src/main/java/cn/chao/eurekaclient/test/ProducerController.java">
+        <entry file="file://$PROJECT_DIR$/eureka-client8002/src/main/java/cn/chao/eurekaclient/feign/HelloController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/feign-client8006/pom.xml">
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/feign-client8006/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/feign-client8006/src/main/java/cn/chao/feignclient/feign/ConsumerController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="133">
               <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
@@ -72,59 +137,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="57">
-                <caret line="3" column="27" lean-forward="true" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eureka-consumer8003/pom.xml">
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+        <entry file="file://$PROJECT_DIR$/hystrixclient8005/src/main/java/cn/chao/hystrixclient/Hystrixclient8005Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="27" column="56" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eureka-consumer8003/src/main/java/cn/chao/eurekaconsumer/consumertest/RestTemplateConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eureka-consumer8003/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="48" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eureka-client8002/src/main/java/cn/chao/eurekaclient/EurekaClient8002Application.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="68" selection-start-line="3" selection-start-column="68" selection-end-line="3" selection-end-column="68" />
+            <state relative-caret-position="152">
+              <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
@@ -140,18 +169,36 @@
       <list>
         <option value="$PROJECT_DIR$/eureka-server8001/src/main/java/cn/chao/eurekaserver/EurekaServer8001Application.java" />
         <option value="$PROJECT_DIR$/eureka-server8001/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/eureka-server8001/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/eureka-client8002/pom.xml" />
         <option value="$PROJECT_DIR$/eureka-client8002/src/main/java/cn/chao/eurekaclient/EurekaClient8002Application.java" />
         <option value="$PROJECT_DIR$/eureka-server8001/pom.xml" />
-        <option value="$PROJECT_DIR$/eureka-client8002/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/eureka-consumer8003/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/eureka-consumer8003/src/main/java/cn/chao/eurekaconsumer/consumertest/Config.java" />
         <option value="$PROJECT_DIR$/eureka-consumer8003/src/main/java/cn/chao/eurekaconsumer/consumertest/ConsumerController.java" />
-        <option value="$PROJECT_DIR$/eureka-client8002/src/main/java/cn/chao/eurekaclient/test/ProducerController.java" />
         <option value="$PROJECT_DIR$/eureka-consumer8003/src/main/java/cn/chao/eurekaconsumer/EurekaConsumer8003Application.java" />
+        <option value="$PROJECT_DIR$/ribbon-client8004/src/main/java/cn/chao/ribbonclient/RibbonClient8004Application.java" />
+        <option value="$PROJECT_DIR$/ribbon-client8004/src/main/java/cn/chao/ribbonclient/ribbon/RibbonConfig.java" />
+        <option value="$PROJECT_DIR$/eureka-client8002/src/main/java/cn/chao/eurekaclient/test/ProducerController.java" />
+        <option value="$PROJECT_DIR$/eureka-client8002/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/ribbon-client8004/src/main/java/cn/chao/ribbonclient/ribbon/RibbonController.java" />
+        <option value="$PROJECT_DIR$/ribbon-client8004/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/hystrixclient8005/src/main/java/cn/chao/hystrixclient/ribbon/RibbonConfig.java" />
+        <option value="$PROJECT_DIR$/hystrixclient8005/src/main/java/cn/chao/hystrixclient/Hystrixclient8005Application.java" />
+        <option value="$PROJECT_DIR$/hystrixclient8005/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/hystrixclient8005/pom.xml" />
+        <option value="$PROJECT_DIR$/hystrixclient8005/src/main/java/cn/chao/hystrixclient/hystrix/testHystrixController.java" />
+        <option value="$PROJECT_DIR$/feign-client8006/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/feign-client8006/src/main/java/cn/chao/feignclient/FeignClient8006Application.java" />
+        <option value="$PROJECT_DIR$/eureka-client8002/src/main/java/cn/chao/eurekaclient/feign/User.java" />
+        <option value="$PROJECT_DIR$/feign-client8006/src/main/java/cn/chao/feignclient/feign/FeignFallBack.java" />
+        <option value="$PROJECT_DIR$/feign-client8006/src/main/java/cn/chao/feignclient/feign/ConsumerController.java" />
+        <option value="$PROJECT_DIR$/eureka-client8002/src/main/java/cn/chao/eurekaclient/feign/HelloController.java" />
+        <option value="$PROJECT_DIR$/feign-client8006/src/main/java/cn/chao/feignclient/feign/FeignService.java" />
+        <option value="$PROJECT_DIR$/feign-client8006/pom.xml" />
+        <option value="$PROJECT_DIR$/feign-client8006/src/main/java/cn/chao/feignclient/feign/User.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -175,15 +222,34 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand />
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="cloud" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="cloud" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="feign-client8006" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="feign-client8006" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+      </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="65" />
-    <option name="y" value="315" />
-    <option name="width" value="1346" />
-    <option name="height" value="688" />
+    <option name="x" value="3" />
+    <option name="y" value="8" />
+    <option name="width" value="1386" />
+    <option name="height" value="788" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -214,19 +280,19 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../microservicecloud" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RestServicesNavigator">
     <treeState>
       <expand>
         <path>
-          <item name="Found 1 services " type="fcff1e1b:RestServiceStructure$RootNode" />
+          <item name="Found 3 services " type="fcff1e1b:RestServiceStructure$RootNode" />
         </path>
       </expand>
       <select />
@@ -244,7 +310,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.EurekaConsumer8003Application">
+  <component name="RunManager" selected="Spring Boot.FeignClient8006Application">
     <configuration name="EurekaClient8002Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="eureka-client8002" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.chao.eurekaclient.EurekaClient8002Application" />
@@ -266,6 +332,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FeignClient8006Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="feign-client8006" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.chao.feignclient.FeignClient8006Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Hystrixclient8005Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="hystrixclient8005" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.chao.hystrixclient.Hystrixclient8005Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RibbonClient8004Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ribbon-client8004" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.chao.ribbonclient.RibbonClient8004Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration>C:\Users\RebortChao\AppData\Roaming\Subversion</configuration>
@@ -281,7 +368,8 @@
       <workItem from="1564973661511" duration="2742000" />
       <workItem from="1564983360418" duration="1084000" />
       <workItem from="1565011396381" duration="803000" />
-      <workItem from="1565412052315" duration="25589000" />
+      <workItem from="1565412052315" duration="27081000" />
+      <workItem from="1565489530772" duration="32559000" />
     </task>
     <task id="LOCAL-00001" summary="Spring Cloud 第一次提交内容，Eureka 服务注册中心 8001 端口的内容。访问 localhost:8001 可以查看内容。">
       <created>1565414554621</created>
@@ -311,16 +399,23 @@
       <option name="project" value="LOCAL" />
       <updated>1565416807634</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Spring Cloud 完成服务 Eureka 的初步学习。进而学习集群方面的内容。这里完成了 服务注册中心（eureka-server）、服务提供者（eureka-client）以及服务消费者（eureka-consumer）。通过访问 http://localhost:8001 、http://localhost:8002/get/1、http://localhost:8003/c/get/1 。完成服务等服务内容的实现。">
+      <created>1565451511044</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1565451511044</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34306000" />
+    <option name="totallyTimeSpent" value="68357000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20574887" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20877458" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -328,7 +423,6 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.9516129" />
@@ -340,14 +434,15 @@
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32903227" />
       <window_info anchor="bottom" id="Docker" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32903227" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" weight="0.32903227" />
+      <window_info anchor="bottom" id="Messages" order="15" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.32980332" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.45763993" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="JSON Utils" order="6" />
@@ -396,6 +491,20 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
@@ -403,21 +512,14 @@
     </ignored-roots>
     <MESSAGE value="Spring Cloud 第一次提交内容，Eureka 服务注册中心 8001 端口的内容。访问 localhost:8001 可以查看内容。" />
     <MESSAGE value="Spring Cloud 第一次提交内容，Eureka 服务注册中心 8001 端口的内容。访问 localhost:8001/eureka" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring Cloud 第一次提交内容，Eureka 服务注册中心 8001 端口的内容。访问 localhost:8001/eureka" />
+    <MESSAGE value="Spring Cloud 完成服务 Eureka 的初步学习。进而学习集群方面的内容。这里完成了 服务注册中心（eureka-server）、服务提供者（eureka-client）以及服务消费者（eureka-consumer）。通过访问 http://localhost:8001 、http://localhost:8002/get/1、http://localhost:8003/c/get/1 。完成服务等服务内容的实现。" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring Cloud 完成服务 Eureka 的初步学习。进而学习集群方面的内容。这里完成了 服务注册中心（eureka-server）、服务提供者（eureka-client）以及服务消费者（eureka-consumer）。通过访问 http://localhost:8001 、http://localhost:8002/get/1、http://localhost:8003/c/get/1 。完成服务等服务内容的实现。" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/chao/App.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -443,25 +545,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eureka-client8002/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="51" selection-start-line="3" selection-start-column="51" selection-end-line="3" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/eureka-client8002/pom.xml">
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="47" column="51" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eureka-consumer8003/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="48" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -482,6 +570,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-consumer8003/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="27" column="56" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-consumer8003/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="48" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../../software/apache-maven-3.5.4-bin/Repository/org/springframework/spring-web/5.1.9.RELEASE/spring-web-5.1.9.RELEASE.jar!/org/springframework/web/client/RestTemplate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="179" column="17" selection-start-line="179" selection-start-column="17" selection-end-line="179" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../../software/apache-maven-3.5.4-bin/Repository/com/netflix/eureka/eureka-client/1.9.12/eureka-client-1.9.12.jar!/com/netflix/discovery/shared/transport/decorator/SessionedEurekaHttpClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ribbon-client8004/target/classes/cn/chao/ribbonclient/ribbon/RibbonController.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="13" column="11" lean-forward="true" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#845#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-client8002/src/main/java/cn/chao/eurekaclient/EurekaClient8002Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="42" lean-forward="true" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-client8002/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="51" lean-forward="true" selection-start-line="3" selection-start-column="51" selection-end-line="3" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-client8002/src/main/java/cn/chao/eurekaclient/test/ProducerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#499#500#0" expanded="true" />
+            <element signature="e#524#525#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/eureka-consumer8003/src/main/java/cn/chao/eurekaconsumer/consumertest/ConsumerController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -492,14 +648,112 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eureka-client8002/src/main/java/cn/chao/eurekaclient/EurekaClient8002Application.java">
+    <entry file="file://$PROJECT_DIR$/ribbon-client8004/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="68" selection-start-line="3" selection-start-column="68" selection-end-line="3" selection-end-column="68" />
+        <state relative-caret-position="323">
+          <caret line="32" column="72" lean-forward="true" selection-start-line="32" selection-start-column="72" selection-end-line="32" selection-end-column="72" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eureka-client8002/src/main/java/cn/chao/eurekaclient/test/ProducerController.java">
+    <entry file="file://$PROJECT_DIR$/ribbon-client8004/src/main/java/cn/chao/ribbonclient/RibbonClient8004Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ribbon-client8004/src/main/java/cn/chao/ribbonclient/ribbon/RibbonConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../../software/apache-maven-3.5.4-bin/Repository/org/springframework/cloud/spring-cloud-commons/2.1.2.RELEASE/spring-cloud-commons-2.1.2.RELEASE.jar!/org/springframework/cloud/client/SpringCloudApplication.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="19" column="11" lean-forward="true" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ribbon-client8004/src/main/java/cn/chao/ribbonclient/ribbon/RibbonController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ribbon-client8004/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hystrixclient8005/src/main/java/cn/chao/hystrixclient/ribbon/RibbonConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hystrixclient8005/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="32" column="79" selection-start-line="32" selection-start-column="79" selection-end-line="32" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hystrixclient8005/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="66" selection-start-line="2" selection-start-column="66" selection-end-line="2" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hystrixclient8005/src/main/java/cn/chao/hystrixclient/Hystrixclient8005Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-client8002/src/main/java/cn/chao/eurekaclient/feign/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hystrixclient8005/src/main/java/cn/chao/hystrixclient/hystrix/testHystrixController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign-client8006/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign-client8006/src/main/java/cn/chao/feignclient/feign/ConsumerController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
@@ -509,19 +763,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eureka-consumer8003/pom.xml">
+    <entry file="file://$PROJECT_DIR$/feign-client8006/src/main/java/cn/chao/feignclient/feign/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="35" column="32" lean-forward="true" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign-client8006/src/main/java/cn/chao/feignclient/FeignClient8006Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign-client8006/src/main/java/cn/chao/feignclient/feign/FeignFallBack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign-client8006/src/main/java/cn/chao/feignclient/feign/FeignService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feign-client8006/pom.xml">
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="27" column="56" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="56" />
+        <state relative-caret-position="228">
+          <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-client8002/src/main/java/cn/chao/eurekaclient/feign/HelloController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="57">
-            <caret line="3" column="27" lean-forward="true" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+          <first_editor relative-caret-position="76">
+            <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+            <folding>
+              <element signature="e#388#417#0" />
+              <element signature="e#589#611#0" />
+              <element signature="e#3659#3788#0" />
+              <element signature="e#3902#3930#0" />
+              <element signature="e#5269#5471#0" />
+              <element signature="e#6033#6260#0" />
+              <element signature="e#6085#6527#0" />
+              <element signature="e#6741#7159#0" />
+              <element signature="e#7213#7595#0" />
+              <element signature="e#7617#7742#0" />
+            </folding>
           </first_editor>
           <second_editor />
         </state>
@@ -579,7 +894,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>cloud</last-edited>
+          <last-edited>hystrixclient8005</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -603,7 +918,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: org.springframework:springloaded:unknown</last-edited>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

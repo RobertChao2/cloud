@@ -11,4 +11,9 @@ public class ProducerController {
     public String get(@PathVariable String id) {
         return "Eureka Producer 8002，hi，I can test this num is "+id;
     }
+
+    @GetMapping("ribbonService")
+    public String ribbonService(){
+        return "this is 8002";
+    }
 }

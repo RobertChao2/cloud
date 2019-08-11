@@ -21,6 +21,11 @@
     <!-- 添加子模块 -->
     <modules>
         <module>eureka-server8001</module>
+        <module>eureka-client8002</module>
+        <module>eureka-consumer8003</module>
+        <module>ribbon-client8004</module>
+        <module>hystrixclient8005</module>
+        <module>feign-client8006</module>
     </modules>
 
   <properties>

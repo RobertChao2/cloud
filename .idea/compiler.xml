@@ -7,8 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="eureka-client8002" />
+        <module name="hystrixclient8005" />
         <module name="eureka-server8001" />
         <module name="eureka-consumer8003" />
+        <module name="feign-client8006" />
+        <module name="ribbon-client8004" />
       </profile>
     </annotationProcessing>
   </component>
@@ -17,6 +20,9 @@
       <module name="eureka-client8002" options="-parameters" />
       <module name="eureka-consumer8003" options="-parameters" />
       <module name="eureka-server8001" options="-parameters" />
+      <module name="feign-client8006" options="-parameters" />
+      <module name="hystrixclient8005" options="-parameters" />
+      <module name="ribbon-client8004" options="-parameters" />
     </option>
   </component>
 </project>
