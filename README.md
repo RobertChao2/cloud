@@ -508,7 +508,75 @@ http://localhost:8006/consumer2 的执行。
     会通过 方法重载（@Overload）调用不同的 service 的 hello() 方法，发送请求内容。
     这些请求会通过 service 中设置的请求名称去访问 @FeignClient 中的 value 中相同的请求名称，携带者相同的参数内容。服务提供者出现请求超时或者断开的问题，会通过 FallBack 的方法回调。
 ```
+* ⑥、通过原生的 Hystrix 请求 service 的内容。（originalHystrix Package Content）
+## 七、服务网关 API Zuul
+官方文档：https://springcloud.cc/spring-cloud-dalston.html#_router_and_filter_zuul
+### 创建 zuul-client8007 （服务网关）的项目内容
+【cloud】-->【new】-->【module】-->【Spring Initialize】-->【artifactId 设置项目名称】-->【加入Eureka Server 
+依赖（Eureka Server）】-->【Finish 创建完成】
+> spring-cloud-starter-eureka 与 spring-cloud-starter-eureka
+#### 项目中目前存在的安全问题（为什么需要网关(1)） ？
+    进入到一个网站中，请求一个服务，没有特别好的办法，就是通过IP地址+端口号。这样的做法，不仅暴露了我们实体机器的IP
+地址，而且处于微服务项目中服务众多，一个一个的启动项目，挨个调用项目的确很复杂。添加一个公共的模块，难道要一个一个的去添加，显然很是麻烦的。
+#### 解决这两个问题呢（为什么需要网关(2)）？
+* 解决访问服务问题，可以像负载均衡那样，通过动态的维护服务的列表去维护。
+* 解决 IP 及 PORT ，可以像 Nginx 做一个反向代理，部署公共模块。
 
+1. 通过 Zuul API 网关，就可以解决上面的问题。调用某个服务，它会给映射，通过服务的 IP地址 映射成路径，输入该路径，即可找到对应的服务，存在一个请求转发的过程，有些像 Nginx 一样，它不会直接去访问IP，它会去 
+Eureka 注册中心拿到服务的实例ID（即服务的名字）。
+    
+2. Zuul 可以通过加载动态过滤机制，从而实现以下各项功能：
+
+　　①、验证与安全保障: 识别面向各类资源的验证要求并拒绝那些与要求不符的请求。
+
+　　②、审查与监控: 在边缘位置追踪有意义数据及统计结果，从而为我们带来准确的生产状态结论。
+
+　　③、动态路由: 以动态方式根据需要将请求路由至不同后端集群处。
+
+　　④、压力测试: 逐渐增加指向集群的负载流量，从而计算性能水平。
+
+　　⑤、负载分配: 为每一种负载类型分配对应容量，并弃用超出限定值的请求。
+
+　　⑥、静态响应处理: 在边缘位置直接建立部分响应，从而避免其流入内部集群。
+
+　　⑦、多区域弹性: 跨越AWS区域进行请求路由，旨在实现ELB使用多样化并保证边缘位置与使用者尽可能接近。
+### 配置 zuul-client8007 
+* ①、启动类上添加 @SpringCloudApplication 和 @EnableZuulProxy 的注解。
+```text
+@EnableDiscoveryClient
+@EnableZuulProxy
+@SpringBootApplication
+public class ZuulClient8007Application {
+
+    public static void main(String[] args) {
+        SpringApplication.run(ZuulClient8007Application.class, args);
+    }
+
+}
+```
+* ②、配置文件中增加内容 application.properties
+```text
+
+server.port=8007
+spring.application.name=zuul-client
+eureka.instance.ip-address=true
+eureka.client.service-url.defaultZone=http://localhost:8001/eureka
+eureka.client.healthcheck.enabled=true
+zuul.routes.springcloud-a.path=/springcloud-a/**
+zuul.routes.springcloud-a.service-id=eureka-client  # 微服务
+zuul.routes.springcloud-b.path=/springcloud-b/**
+zuul.routes.springcloud-b.service-id=eureka-consumer # 微服务
+
+```
+
+* ③、服务配置内容如下：
+```text
+1. eureka-client :是之前创建的服务客户端，端口是 8002
+2. eureka-consumer :是之前创建的服务消费者，端口是 8003
+3. 这两个微服务要与本 zuul 项目要同时启动，并注册到统一服务中心内。
+```
+
+* 4、设置 zuul 的过滤器。内容详情请见代码，这里就不更新了。
 ## Git 项目版本控制器
 ### idea 提交项目时候出现上传拒绝（ Push rejected）
 * **原因**：Push rejected: Push to origin/master was rejected  拒绝推到主分支

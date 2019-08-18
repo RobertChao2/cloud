@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/ribbon-client8004/pom.xml" />
         <option value="$PROJECT_DIR$/hystrixclient8005/pom.xml" />
         <option value="$PROJECT_DIR$/feign-client8006/pom.xml" />
+        <option value="$PROJECT_DIR$/zuul-client8007/pom.xml" />
       </list>
     </option>
   </component>
