@@ -12,6 +12,8 @@
         <option value="$PROJECT_DIR$/hystrixclient8005/pom.xml" />
         <option value="$PROJECT_DIR$/feign-client8006/pom.xml" />
         <option value="$PROJECT_DIR$/zuul-client8007/pom.xml" />
+        <option value="$PROJECT_DIR$/config-client8008/pom.xml" />
+        <option value="$PROJECT_DIR$/config-server8009/pom.xml" />
       </list>
     </option>
   </component>

@@ -326,7 +326,7 @@ public class testHystrixController {
 #### 项目运行过程中，一直未加入到 Eureka 的服务注册中心
 【猜想（应该是依赖的问题）】spring-cloud-starter-netflix-eureka-client 包含了 spring-cloud-starter-eureka 可以将 eureka 
 注册到服务中心，之前使用的是 spring-cloud-netflix-eureka-client 不能够达到效果 。
-## 六、声明式服务调用 Spring Cloud Feign
+## 四、声明式服务调用 Spring Cloud Feign
 > 当我们通过RestTemplate调用其它服务的API时，所需要的参数须在请求的URL中进行拼接，如果参数少的话或许我们还可以编写，一旦有多个参数的话，这时拼接请求字符串就会效率低。
 
 > Feign 是一个声明式的 Web Service 客户端，它的目的就是让 Web Service 调用更加简单。Feign 提供了 HTTP 请求的模板，通过编写简单的接口和插入注解，就可以定义好HTTP请求的参数、格式、地址等信息。  
@@ -509,7 +509,7 @@ http://localhost:8006/consumer2 的执行。
     这些请求会通过 service 中设置的请求名称去访问 @FeignClient 中的 value 中相同的请求名称，携带者相同的参数内容。服务提供者出现请求超时或者断开的问题，会通过 FallBack 的方法回调。
 ```
 * ⑥、通过原生的 Hystrix 请求 service 的内容。（originalHystrix Package Content）
-## 七、服务网关 API Zuul
+## 五、服务网关 API Zuul
 官方文档：https://springcloud.cc/spring-cloud-dalston.html#_router_and_filter_zuul
 ### 创建 zuul-client8007 （服务网关）的项目内容
 【cloud】-->【new】-->【module】-->【Spring Initialize】-->【artifactId 设置项目名称】-->【加入Eureka Server 
@@ -577,6 +577,55 @@ zuul.routes.springcloud-b.service-id=eureka-consumer # 微服务
 ```
 
 * 4、设置 zuul 的过滤器。内容详情请见代码，这里就不更新了。
+
+## 六、分布式配置中心 Spring Cloud Config
+Spring Cloud Config 分布式系统中的外部配置提供服务器和客户端支持。使用 Config Server ，您可以为所有环境中的应用程序管理其外部属性。它非常适合 Spring 
+应用，也可以使用在其他语言的应用上。随着应用程序通过从开发到测试和生产的部署流程，您可以管理这些环境之间的配置，并确定应用程序具有迁移时需要运行的一切。服务器存储后端的默认实现使用 git 
+，因此轻松支持标签版本的配置环境，以及可以访问用于管理内容的各种工具。
+##### Spring Cloud Config 服务端配置特性
+* HTTP ，为外部配置提供基于资源的 API 
+* 属性值的加密和解密（对称加密和非对称加密）
+* 通过 @EnableConfigServer 在 Spring Boot 应用中非常简单的嵌入。 
+##### Spring Cloud Config 客户端配置特性
+* 绑定 Config 服务端，并使用远程的属性源初始化 Spring 环境。
+* 属性值的加密和解密（对称加密和非对称加密）
+### 6.1 搭建配置服务中心（config server 8009）
+【cloud】-->【new】-->【module】-->【Spring Initialize】-->【artifactId 设置项目名称】-->【config-server】-->【Finish 创建完成】
+> 导入依赖有：spring-cloud-config-server
+#### application.properties 文件
+```text
+    spring.application.name=config-server
+    spring.cloud.config.server.git.uri=https://github.com/RobertChao2/cloud/
+    spring.cloud.config.server.git.search-paths=config-server8009
+    spring.cloud.config.server.git.username=
+    spring.cloud.config.server.git.password=
+    server.port=8009
+```
+#### 启动类增加 @EnableConfigConfig
+```text
+    @EnableConfigServer
+    @SpringBootApplication
+    public class ConfigServer8009Application {
+    
+        public static void main(String[] args) {
+            SpringApplication.run(ConfigServer8009Application.class, args);
+        }
+    }
+```
+### 6.2 搭建配置客户端的内容（config client 8008）
+【cloud】-->【new】-->【module】-->【Spring Initialize】-->【artifactId 设置项目名称】-->【config-client、web】-->【Finish 创建完成】
+> 导入依赖有：spring-cloud-starter-config 、spring-cloud-config-client 、 spring-boot-starter-web
+#### application.properties 文件
+```text
+    spring.application.name=config-client
+    # 指明远程仓库的分支
+    spring.cloud.config.label=master
+    # dev 开发环境配置文件 、 test 测试环境 、 pro 正式环境 。
+    spring.cloud.config.profile=dev
+    # 指明配置服务中心的网址
+    spring.cloud.config.uri= http://localhost:8009/
+    server.port=8008
+```
 ## Git 项目版本控制器
 ### idea 提交项目时候出现上传拒绝（ Push rejected）
 * **原因**：Push rejected: Push to origin/master was rejected  拒绝推到主分支

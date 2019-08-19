@@ -7,8 +7,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/chao/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cn/chao/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -19,6 +18,8 @@
     <ignored path="$PROJECT_DIR$/hystrixclient8005/target/" />
     <ignored path="$PROJECT_DIR$/feign-client8006/target/" />
     <ignored path="$PROJECT_DIR$/zuul-client8007/target/" />
+    <ignored path="$PROJECT_DIR$/config-client8008/target/" />
+    <ignored path="$PROJECT_DIR$/config-server8009/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,14 +31,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="418">
-                <caret line="578" column="34" selection-start-line="578" selection-start-column="34" selection-end-line="578" selection-end-column="34" />
+              <first_editor relative-caret-position="300">
+                <caret line="604" column="7" lean-forward="true" selection-start-line="604" selection-start-column="7" selection-end-line="604" selection-end-column="7" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config-client8008/src/main/java/cn/chao/configclient/ConfigClient8008Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="6" column="42" lean-forward="true" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -45,7 +55,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eureka-consumer8003/src/main/java/cn/chao/eurekaconsumer/consumertest/ConsumerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
+            <state relative-caret-position="171">
               <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -57,7 +67,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eureka-client8002/src/main/java/cn/chao/eurekaclient/test/ProducerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
+            <state relative-caret-position="209">
               <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -128,7 +138,6 @@
         <option value="$PROJECT_DIR$/feign-client8006/src/main/java/cn/chao/feignclient/feign/FeignService.java" />
         <option value="$PROJECT_DIR$/feign-client8006/pom.xml" />
         <option value="$PROJECT_DIR$/feign-client8006/src/main/java/cn/chao/feignclient/feign/User.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/feign-client8006/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/feign-client8006/src/main/java/cn/chao/feignclient/originalHystix/HjcCommand.java" />
         <option value="$PROJECT_DIR$/feign-client8006/src/main/java/cn/chao/feignclient/originalHystix/HystrixConfiguration.java" />
@@ -136,7 +145,14 @@
         <option value="$PROJECT_DIR$/zuul-client8007/src/main/java/cn/chao/zuulclient/zuul/zuulConfig.java" />
         <option value="$PROJECT_DIR$/zuul-client8007/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/zuul-client8007/src/main/java/cn/chao/zuulclient/zuul/TokenFilter.java" />
+        <option value="$PROJECT_DIR$/config-client8008/pom.xml" />
+        <option value="$PROJECT_DIR$/config-client8008/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/config-client8008/src/main/java/cn/chao/configclient/test/TestController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/config-server8009/src/main/java/cn/chao/configserver/ConfigServer8009Application.java" />
+        <option value="$PROJECT_DIR$/config-server8009/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/config-client8008/src/main/java/cn/chao/configclient/ConfigClient8008Application.java" />
       </list>
     </option>
   </component>
@@ -184,10 +200,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="3" />
-    <option name="y" value="8" />
-    <option name="width" value="1386" />
-    <option name="height" value="788" />
+    <option name="x" value="31" />
+    <option name="y" value="204" />
+    <option name="width" value="1130" />
+    <option name="height" value="617" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -195,7 +211,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -206,25 +221,68 @@
             <path>
               <item name="cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="zuul-client8007" type="462c0819:PsiDirectoryNode" />
+              <item name="config-client8008" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="zuul-client8007" type="462c0819:PsiDirectoryNode" />
+              <item name="config-client8008" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="zuul-client8007" type="462c0819:PsiDirectoryNode" />
+              <item name="config-client8008" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="zuul-client8007" type="462c0819:PsiDirectoryNode" />
+              <item name="config-client8008" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="config-client8008" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="configclient" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="config-client8008" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="config-server8009" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="config-server8009" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="config-server8009" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="config-server8009" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -232,26 +290,16 @@
             <path>
               <item name="cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="zuul-client8007" type="462c0819:PsiDirectoryNode" />
+              <item name="config-server8009" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zuulclient" type="462c0819:PsiDirectoryNode" />
+              <item name="configserver" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="zuul-client8007" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zuulclient" type="462c0819:PsiDirectoryNode" />
-              <item name="zuul" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="zuul-client8007" type="462c0819:PsiDirectoryNode" />
+              <item name="config-server8009" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -261,6 +309,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -271,6 +320,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="C:/WorkSpaces/20190726/myQid/mq" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -302,6 +352,20 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.ZuulClient8007Application">
+    <configuration name="ConfigClient8008Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="config-client8008" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.chao.configclient.ConfigClient8008Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConfigServer8009Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="config-server8009" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.chao.configserver.ConfigServer8009Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EurekaClient8002Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="eureka-client8002" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.chao.eurekaclient.EurekaClient8002Application" />
@@ -370,6 +434,11 @@
       <workItem from="1565489530772" duration="36153000" />
       <workItem from="1565571520096" duration="7203000" />
       <workItem from="1566089373233" duration="6080000" />
+      <workItem from="1566122592990" duration="1768000" />
+      <workItem from="1566127636484" duration="1113000" />
+      <workItem from="1566128919498" duration="1425000" />
+      <workItem from="1566223712311" duration="3307000" />
+      <workItem from="1566227466945" duration="467000" />
     </task>
     <task id="LOCAL-00001" summary="Spring Cloud 第一次提交内容，Eureka 服务注册中心 8001 端口的内容。访问 localhost:8001 可以查看内容。">
       <created>1565414554621</created>
@@ -413,17 +482,24 @@
       <option name="project" value="LOCAL" />
       <updated>1565532869793</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Spring Cloud 完成了 Zuul网关协议，统一设置了请求的方式，而且还可以对登录的拦截做统一的处理。">
+      <created>1566122885820</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1566122885821</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85234000" />
+    <option name="totallyTimeSpent" value="93314000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21482602" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22995462" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -522,10 +598,10 @@
     <MESSAGE value="Spring Cloud 第一次提交内容，Eureka 服务注册中心 8001 端口的内容。访问 localhost:8001/eureka" />
     <MESSAGE value="Spring Cloud 完成服务 Eureka 的初步学习。进而学习集群方面的内容。这里完成了 服务注册中心（eureka-server）、服务提供者（eureka-client）以及服务消费者（eureka-consumer）。通过访问 http://localhost:8001 、http://localhost:8002/get/1、http://localhost:8003/c/get/1 。完成服务等服务内容的实现。" />
     <MESSAGE value="Spring Cloud 完成了 Ribbon 客户端负载均衡的理解，Hystrix 的熔断机制，又学习了 feign 声明式服务调用的遍历。" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring Cloud 完成了 Ribbon 客户端负载均衡的理解，Hystrix 的熔断机制，又学习了 feign 声明式服务调用的遍历。" />
+    <MESSAGE value="Spring Cloud 完成了 Zuul网关协议，统一设置了请求的方式，而且还可以对登录的拦截做统一的处理。" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring Cloud 完成了 Zuul网关协议，统一设置了请求的方式，而且还可以对登录的拦截做统一的处理。" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/chao/App.java" />
     <entry file="file://$PROJECT_DIR$/eureka-server8001/src/main/java/cn/chao/eurekaserver/EurekaServer8001Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -534,12 +610,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/eureka-server8001/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
           <caret line="37" column="49" lean-forward="true" selection-start-line="37" selection-start-column="49" selection-end-line="37" selection-end-column="49" />
         </state>
       </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/eureka-server8001/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
@@ -549,12 +625,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/eureka-client8002/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="47" column="51" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="51" />
         </state>
       </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/eureka-consumer8003/src/main/java/cn/chao/eurekaconsumer/EurekaConsumer8003Application.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -564,12 +640,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/eureka-consumer8003/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="27" column="56" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="56" />
         </state>
       </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/eureka-consumer8003/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
@@ -611,12 +687,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ribbon-client8004/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="32" column="72" lean-forward="true" selection-start-line="32" selection-start-column="72" selection-end-line="32" selection-end-column="72" />
         </state>
       </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/ribbon-client8004/src/main/java/cn/chao/ribbonclient/RibbonClient8004Application.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -670,12 +746,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hystrixclient8005/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="142">
           <caret line="32" column="79" selection-start-line="32" selection-start-column="79" selection-end-line="32" selection-end-column="79" />
         </state>
       </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/hystrixclient8005/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
@@ -733,20 +809,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/feign-client8006/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/feign-client8006/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
@@ -818,26 +886,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eureka-consumer8003/src/main/java/cn/chao/eurekaconsumer/consumertest/ConsumerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eureka-consumer8003/src/main/java/cn/chao/eurekaconsumer/consumertest/RestTemplateConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zuul-client8007/src/main/java/cn/chao/zuulclient/zuul/zuulConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -872,9 +920,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-consumer8003/src/main/java/cn/chao/eurekaconsumer/consumertest/ConsumerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/eureka-client8002/src/main/java/cn/chao/eurekaclient/test/ProducerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
+        <state relative-caret-position="209">
           <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -882,13 +948,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config-server8009/src/main/java/cn/chao/configserver/ConfigServer8009Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="8" column="42" lean-forward="true" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config-server8009/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="24" column="63" selection-start-line="24" selection-start-column="63" selection-end-line="24" selection-end-column="63" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config-client8008/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="47" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config-client8008/src/main/java/cn/chao/configclient/test/TestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config-server8009/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-consumer8003/src/main/java/cn/chao/eurekaconsumer/consumertest/RestTemplateConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config-client8008/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="13" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="418">
-            <caret line="578" column="34" selection-start-line="578" selection-start-column="34" selection-end-line="578" selection-end-column="34" />
+          <first_editor relative-caret-position="300">
+            <caret line="604" column="7" lean-forward="true" selection-start-line="604" selection-start-column="7" selection-end-line="604" selection-end-column="7" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config-client8008/src/main/java/cn/chao/configclient/ConfigClient8008Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="6" column="42" lean-forward="true" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
         </state>
       </provider>
     </entry>

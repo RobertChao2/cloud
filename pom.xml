@@ -26,6 +26,8 @@
         <module>ribbon-client8004</module>
         <module>hystrixclient8005</module>
         <module>feign-client8006</module>
+        <module>config-client8008</module>
+        <module>config-server8009</module>
     </modules>
 
   <properties>
